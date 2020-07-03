@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>musCatalog</title>
+	<link rel="stylesheet" type="text/css" href="musCatalog.css">
+</head>
+<body onload="myLoad()">
+    <form>
+        <label for="artist">Artist: </label>
+        <input type="text" name="artist" id="artist" required>
+        <label for="title">Title: </label>
+        <input type="text" name="title" id="title" required>
+        <label for="album">Album: </label>
+        <input type="text" name="album" id="album">
+        <label for="genre">Choose Your Music Genre: </label>
+        <select id="genre">
+            <option value="">--Select Genre--</option>
+            <option value="gospel">Gospel</option>
+            <option value="afrojazz">Rnb</option>
+            <option value="afrojazz">Rock</option>
+            <option value="afrojazz">Jazz</option>
+            <option value="afrojazz">RAP</option>
+            <option value="afrojazz">Afro Jazz</option>
+            
+        </select>
+        <label for="favourite">Favourite:</label>
+        <input type="text" name="favourite" id="favourite">
+        <button onclick="addTrack()">Create new Track List</button>
+    </form>
+    <select id="trackList" onchange="ChangeActiveUser(this.value)">
+        <option value="">--Choose Your Track--</option>
+    </select>
+<script type="text/javascript" src="musCatalog.js"></script>
+</body>
+</html>
